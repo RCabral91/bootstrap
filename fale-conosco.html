@@ -3,123 +3,148 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+            crossorigin="anonymous"
+        >
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fale Conosco</title>
     </head>
     <body>
-        <header class="fixed">
+        <header class="mb-4">
             <div class="header">
-                <div class="container">
+                <div class="container pb-2 pt-2">
                     <a href="index.html">
                         <img src="logo-2.jpg" width="150px">
-                    </a>
+                    </a>    
                 </div>
             </div>       
-            <nav class="header-2">  
-                <div class="container"> 
-                    <div class="row">    
-                        <div class="col-6">               
-                            <a class="header-2" href="index.html">Página inicial</a>
-                            <a class="header-2" href="quem_somos.html">Quem Somos</a>
-                            <a class="header-2" href="produtos.html">Produtos</a>   
-                            <a class="header-2" href="fale_conosco.html">Fale Conosco</a> 
-                        </div>
-                        <div class="col-6 text-right">
-                            <a href="carrinho-de-compra.html">
-                                <img src="carrinho-de-compras.jpg" width="40px">
-                            </a>
-                        </div>
-                    </div> 
-                </div>        
-            </nav>  
+                <nav class="header-2 pt-3 pb-1">  
+                    <div class="container"> 
+                        <div class="row">    
+                            <div class="col header-2">   
+                                <ul class="list-unstyled list-inline">          
+                                    <li class="list-inline-item"><a href="index.html">Página inicial</a></li>
+                                    <li class="list-inline-item"><a href="quem-somos.html">Quem Somos</a></li>
+                                    <li class="list-inline-item"><a href="produtos.html">Produtos</a></li>   
+                                    <li class="list-inline-item"><a href="fale-conosco.html">Fale Conosco</a></li> 
+                                </ul>  
+                            </div>
+                            <div class="col text-end">
+                                <a href="carrinho-de-compra.html">
+                                    <img src="carrinho-de-compras.jpg" width="40px">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>        
+                </nav>  
         </header>
         <main>
             <section>
-            <a class="migalha" href="index.html">Página Inicial</a> 
-            <label class="migalha">>Fale Conosco</label>
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fale Conosco</li>
+                        </ol>
+                    </nav>
+                </div>
             </section>
-            <section>
-                <p>
+            <section>  
+                <div class="container"> 
+                    <p>
                     <h1>
                         Deixe sua dúvida, sugestão ou reclamação para podermos 
                         melhorar cada vez mais nosso atendimento.
                     </h1>
-                </p>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-8">
-                            <form method="POST" action="pagina-de-destino.html">
-                                <div class="conosco">
-                                    <div>
-                                        <h2>Nome:</h2>
-                                        <div class="dl">
-                                            <input class="text-center p-15 w-60" type="text" name="nome">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h2>E-mail:</h2>
-                                        <div class="dl">
-                                            <input class="text-center p-15 w-60" type="email" name="email" required>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h2>Telefone:</h2>
-                                        <div class="dl">
-                                            <input class="text-center p-15 w-60" type="tel" name="telefone">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h2>Mensagem:</h2>
-                                        <div class="dl">
-                                            <textarea class="text-center p-15 w-60" name="mensagem" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="dl">
-                                        <button type="submit">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
+                    </p>
+                    <form class="row g-3">
+                        <div class="col-md-4 fs-5">
+                            <label for="inputEmail4" class="form-label">Nome</label>
+                            <input type="email" class="form-control" id="inputEmail4">
                         </div>
-                        <div class="col-4 text-center">
-                            <h2>Endereço</h2>
-                            <h3 class="h3">Rua da Bebedeira, n22, <br>
-                                Esquina da Loucura com Doideira-NF</h3>
-                            <h2>Telefone</h2>
-                            <h3 class="h3">22 25282525</h3>
-                            <h2>Redes sociais</h2>
-                            <h3 class="h3">@deliriumdofeijao</h3>
+                        <div class="col-md-4 fs-5">
+                            <label for="inputPassword4" class="form-label">Email</label>
+                            <input type="password" class="form-control" id="inputPassword4">
                         </div>
-                    </div>
+                        <div class="col-4 fs-5">
+                            <label for="inputAddress2" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-12 fs-5">
+                            <label for="inputAddress" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        
+                        <div class="col-md-6 fs-5">
+                            <label for="inputCity" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4 fs-5">
+                            <label for="inputState" class="form-label">Estado</label>
+                            <select id="inputState" class="form-select">
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 fs-5">
+                            <label for="inputZip" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <label class="fs-5">Mensagem:</label>
+                        <textarea></textarea>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Aceito receber ofertas por e-mail
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
                 </div>
+                <div class="text-center">
+                    <h2>Endereço</h2>
+                    <p class="fw-normal fs-4">Rua da Bebedeira, n22, <br>
+                        Esquina da Loucura com Doideira-NF</p>
+                    <h2>Telefone</h2>
+                    <p class="fw-normal fs-4">22 25282525</p>
+                    <h2>Redes sociais</h2>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <p class="fw-normal fs-4">@deliriumdofeijao</p>
+                    </a>
+                </div>  
             </section>
 
-                
-        
         </main>
         <footer>
-            <div class="footer">
+            <div class="footer mt-3">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row pt-3 pb-3">
+                        <div class="col">
                             <img src="logo-2.jpg" width="150px"> 
                             <div>
                                 <div>                       
                                     <a href="index.html">Página inicial</a>
                                 </div>
                                 <div>
-                                    <a href="quem_somos.html">Quem Somos</a>
+                                    <a href="quem-somos.html">Quem Somos</a>
                                 </div>
                                 <div>
                                     <a href="produtos.html">Produtos</a>  
                                 </div> 
                                 <div>
-                                    <a href="fale_conosco.html">Fale Conosco</a> 
+                                    <a href="fale-conosco.html">Fale Conosco</a> 
                                 </div> 
                             </div> 
                         </div>                  
-                        <div class="col-4"></div>
-                        <div class="col-4 text-right">
+                        <div class="col"></div>
+                        <div class="col text-end">
                             <a href="https://www.instagram.com/" target="_blank">
                                 <img src="insta.png" width="40px" height="40px">
                             </a>
@@ -130,11 +155,16 @@
                     </div>
                 </div>        
             </div>
-            <div class="footer-2">
-                <div class="container">
-                    <h2 class="rodape">Criado por Rafael Cabral</h2>
+            <div class="footer-2 p-2">
+                <div class="text-center">
+                    <p class="fs-6">Criado por Rafael Cabral</p>
                 </div>
             </div>
         </footer>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>     
