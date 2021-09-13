@@ -16,28 +16,76 @@
     <body>
         <header class="mb-4">
             <div class="header">
-                <div class="container pb-2 pt-2">
-                    <a href="index.html">
-                        <img src="logo-2.jpg" width="150px">
-                    </a>    
+                <div class="container py-2">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html" class="flex-fill">
+                            <img src="logo-2.jpg" width="150px">
+                        </a> 
+                        <div class="d-flex flex-fill">
+                            <input 
+                                type="search" 
+                                class="form-control" 
+                                id="search-input" 
+                                placeholder="Busque sua cerveja"     
+                            >
+                            <button type="button" class="btn">
+                                <a href="">
+                                    <img src="pesquisa.png" width="35px">
+                                </a>
+                            </button>
+                        </div>
+                            <div class="flex-fill text-end">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="insta.png" width="40px" height="40px">
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="face.png" width="35px" height="35px">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>  
                 </div>
             </div>       
                 <nav class="header-2 pt-3 pb-1">  
-                    <div class="container"> 
-                        <div class="row">    
-                            <div class="col header-2">   
-                                <ul class="list-unstyled list-inline">          
-                                    <li class="list-inline-item"><a href="index.html">Página inicial</a></li>
-                                    <li class="list-inline-item"><a href="quem-somos.html">Quem Somos</a></li>
-                                    <li class="list-inline-item"><a href="produtos.html">Produtos</a></li>   
-                                    <li class="list-inline-item"><a href="fale-conosco.html">Fale Conosco</a></li> 
-                                </ul>  
-                            </div>
-                            <div class="col text-end">
-                                <a href="carrinho-de-compra.html">
-                                    <img src="carrinho-de-compras.jpg" width="40px">
-                                </a>
-                            </div>
+                    <div class="container">     
+                        <div class="header-2 d-flex justify-content-between">   
+                            <ul class="list-unstyled d-flex list-inline">          
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="index.html">
+                                        Página inicial
+                                    </a>
+                                </li>
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="quem-somos.html">
+                                        Quem Somos
+                                    </a>
+                                </li>
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="produtos.html">
+                                        Produtos
+                                    </a>
+                                </li>   
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="fale-conosco.html">
+                                        Fale Conosco
+                                    </a>
+                                </li> 
+                            </ul>  
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a class="fs-5 fw-bold text-white"
+                                        href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
+                                        Veja nossa matriz
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="carrinho-de-compra.html">
+                                <img src="carrinho-de-compras.jpg" width="35px">
+                            </a>
                         </div> 
                     </div>        
                 </nav>  
@@ -47,47 +95,58 @@
                 <div class="container">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Página inicial</a>
+                            </li>
+                            <li class="breadcrumb-item active" 
+                                aria-current="page">Quem Somos
+                            </li>
                         </ol>
                     </nav>
                 </div>
             </section>
             <section>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="d-flex">
+                        <div>
                             <h2>Uma breve explicação de nossa história</h2>
                             <p>
-                                Você pode desfrutar de mais de 2.000 cervejas de todo o mundo. 
-                                O Delirium do Feijão detém<br> o Guinness World Records pelo 
-                                número de cervejas disponíveis para degustação : 
-                                <strong>2.004 recordes obtidos em 2004.</strong>
+                                Você pode desfrutar de mais de 2.000 cervejas de 
+                                todo o mundo. O Delirium do Feijão detém<br> o 
+                                Guinness World Records pelo número de cervejas 
+                                disponíveis para degustação: <strong>2.004 
+                                recordes obtidos em 2004.</strong>
                             </p>
                             <p>
-                                Você pode escolher entre os Trappists, o famoso Abbay belga, 
-                                cervejas marrons fortes,<br> frutas ou isqueiros da Bélgica 
-                                e do mundo. E para os amantes de diferentes sabores,<br> 
-                                oferecemos cervejas inusitada como chocolate, banana, 
-                                com coco de nozes, especiarias,<br> pimenta quente, pão de 
-                                gengibre e também, temos cervejas sem glúten.
+                                Você pode escolher entre os Trappists, o famoso 
+                                Abbay belga, cervejas marrons fortes,<br> frutas 
+                                ou isqueiros da Bélgica e do mundo. E para os 
+                                amantes de diferentes sabores,<br>oferecemos 
+                                cervejas inusitada como chocolate, banana, 
+                                com coco de nozes, especiarias,<br> pimenta 
+                                quente, pão de gengibre e também, temos cervejas 
+                                sem glúten.
                             </p>
                             <p>
-                                Está tendo dificuldade em escolher? <br>Não se preocupe. 
-                                Nossa equipe está aqui para ajudá-lo e eles vão ouvi-lo antes 
-                                de propor escolhas diferentes !<br> Todos os gostos são admitidos. 
-                                Dito isso, a qualidade vai primeiro. Será necessário insistir 
-                                em beber produtos industriais! <strong>Mas ei, o cliente é 
-                                rei!</strong>
+                                Está tendo dificuldade em escolher? <br>Não se 
+                                preocupe. Nossa equipe está aqui para ajudá-lo e 
+                                eles vão ouvi-lo antes de propor escolhas 
+                                diferentes !<br> Todos os gostos são admitidos. 
+                                Dito isso, a qualidade vai primeiro. Será 
+                                necessário insistir em beber produtos 
+                                industriais! <strong>Mas ei, o cliente érei!
+                                </strong>
                             </p>
                             <p>
-                                Some-se a isso uma ótima decoração, milhares de souvenirs em 
-                                cerveja e cervejarias:<br> pratos publicitários antigos, bandejas, 
-                                copos, também acrescentam nossas sessões de jam todas as 
-                                quintas-feiras, shows, ... e prepare-se para uma grande noite!
+                                Some-se a isso uma ótima decoração, milhares de 
+                                souvenirs em cerveja e cervejarias:<br> pratos 
+                                publicitários antigos, bandejas, copos, também 
+                                acrescentam nossas sessões de jam todas as 
+                                quintas-feiras, shows, ... e prepare-se para uma 
+                                grande noite!
                             </p>
                         </div>
-                        <div class="col-6 text-right my-15">
+                        <div class="text-right my-15">
                             <img class="w-100" src="foto-principal.jpg">
                         </div>
                     </div>
@@ -97,9 +156,10 @@
         <footer>
             <div class="footer mt-3">
                 <div class="container">
-                    <div class="row pt-3 pb-3">
-                        <div class="col">
+                    <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
+                        <div>
                             <img src="logo-2.jpg" width="150px"> 
+                        </div>
                             <div>
                                 <div>                       
                                     <a href="index.html">Página inicial</a>
@@ -114,9 +174,13 @@
                                     <a href="fale-conosco.html">Fale Conosco</a> 
                                 </div> 
                             </div> 
-                        </div>                  
-                        <div class="col"></div>
-                        <div class="col text-end">
+                            <div>
+                                <a class="fs-3 text-white"
+                                    href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
+                                    Veja nossa matriz
+                                </a>
+                            </div>                  
+                        <div>
                             <a href="https://www.instagram.com/" target="_blank">
                                 <img src="insta.png" width="40px" height="40px">
                             </a>
@@ -137,8 +201,6 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
             crossorigin="anonymous">
-        </script>
-    
-        
+        </script> 
     </body>
 </html>

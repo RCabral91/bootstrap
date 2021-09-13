@@ -17,28 +17,76 @@
     <body>
         <header class="mb-4">
             <div class="header">
-                <div class="container pb-2 pt-2">
-                    <a href="index.html">
-                        <img src="logo-2.jpg" width="150px">
-                    </a>    
+                <div class="container py-2">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html" class="flex-fill">
+                            <img src="logo-2.jpg" width="150px">
+                        </a> 
+                        <div class="d-flex flex-fill">
+                            <input 
+                                type="search" 
+                                class="form-control" 
+                                id="search-input" 
+                                placeholder="Busque sua cerveja"     
+                            >
+                            <button type="button" class="btn">
+                                <a href="">
+                                    <img src="pesquisa.png" width="35px">
+                                </a>
+                            </button>
+                        </div>
+                            <div class="flex-fill text-end">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="insta.png" width="40px" height="40px">
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="face.png" width="35px" height="35px">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>  
                 </div>
             </div>       
                 <nav class="header-2 pt-3 pb-1">  
-                    <div class="container"> 
-                        <div class="row">    
-                            <div class="col header-2">   
-                                <ul class="list-unstyled list-inline">          
-                                    <li class="list-inline-item"><a href="index.html">Página inicial</a></li>
-                                    <li class="list-inline-item"><a href="quem-somos.html">Quem Somos</a></li>
-                                    <li class="list-inline-item"><a href="produtos.html">Produtos</a></li>   
-                                    <li class="list-inline-item"><a href="fale-conosco.html">Fale Conosco</a></li> 
-                                </ul>  
-                            </div>
-                            <div class="col text-end">
-                                <a href="carrinho-de-compra.html">
-                                    <img src="carrinho-de-compras.jpg" width="40px">
-                                </a>
-                            </div>
+                    <div class="container">     
+                        <div class="header-2 d-flex justify-content-between">   
+                            <ul class="list-unstyled d-flex list-inline">          
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="index.html">
+                                        Página inicial
+                                    </a>
+                                </li>
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="quem-somos.html">
+                                        Quem Somos
+                                    </a>
+                                </li>
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="produtos.html">
+                                        Produtos
+                                    </a>
+                                </li>   
+                                <li 
+                                    class="list-inline-item">
+                                    <a href="fale-conosco.html">
+                                        Fale Conosco
+                                    </a>
+                                </li> 
+                            </ul>  
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a class="fs-5 fw-bold text-white"
+                                        href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
+                                        Veja nossa matriz
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="carrinho-de-compra.html">
+                                <img src="carrinho-de-compras.jpg" width="35px">
+                            </a>
                         </div> 
                     </div>        
                 </nav>  
@@ -51,11 +99,11 @@
             </section>
             <section>
                 <div class="container">
-                    <div class="row my-2">
-                        <div class="col">
+                    <div class="d-flex my-2">
+                        <div class="flex-grow-1">
                             <h1>Destaques</h1>
                         </div>
-                        <div class="col text-end mt-2">
+                        <div class="mt-2">
                             <a class="btn btn-info" href="produtos.html">Ver todos</a>
                         </div>
                     </div>
@@ -63,18 +111,32 @@
                         <div class="col">
                             <div class="card" style="width: 100%">
                                 <a href="produto-selecionado.html">
-                                    <img src="delirium-villa-real-750ml.jpg" class="card-img-top">
+                                    <img 
+                                        src="delirium-villa-real-750ml.jpg" 
+                                        class="card-img-top"
+                                    >
                                 </a>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Delirium Villa Real 750ml</h5>
+                                    <h5 
+                                        class="card-title">
+                                            Delirium Villa Real 750ml
+                                    </h5>
                                     <p class="card-text fs-5">R$ 18,90</p>
-                                    <a href="produto-selecionado.html" class="btn btn-info">Detalhes de Produto</a>
+                                    <a 
+                                        href="produto-selecionado.html" 
+                                        class="btn btn-info"
+                                        >
+                                            Detalhes de Produto
+                                    </a>
                                 </div>
                             </div>
                         </div> 
                         <div class="col">
                             <div class="card" style="width: 100%">
-                                <img src="delirium-nocturnum-strong-dark.jpg" class="card-img-top">
+                                <img 
+                                    src="delirium-nocturnum-strong-dark.jpg" 
+                                    class="card-img-top"
+                                >
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Delirium Strong Dark</h5>
                                     <p class="card-text fs-5">R$ 11,90</p>
@@ -99,9 +161,10 @@
         <footer>
             <div class="footer mt-3">
                 <div class="container">
-                    <div class="row pt-3 pb-3">
-                        <div class="col">
+                    <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
+                        <div>
                             <img src="logo-2.jpg" width="150px"> 
+                        </div>
                             <div>
                                 <div>                       
                                     <a href="index.html">Página inicial</a>
@@ -116,9 +179,13 @@
                                     <a href="fale-conosco.html">Fale Conosco</a> 
                                 </div> 
                             </div> 
-                        </div>                  
-                        <div class="col"></div>
-                        <div class="col text-end">
+                            <div>
+                                <a class="fs-3 text-white"
+                                    href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
+                                    Veja nossa matriz
+                                </a>
+                            </div>                  
+                        <div>
                             <a href="https://www.instagram.com/" target="_blank">
                                 <img src="insta.png" width="40px" height="40px">
                             </a>
