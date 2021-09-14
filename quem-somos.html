@@ -11,84 +11,178 @@
         >
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/feaf9837f7.js" crossorigin="anonymous"></script>
         <title>Delirium do Feijão</title>
     </head>
     <body>
-        <header class="mb-4">
+        <header class="mb-4 d-none d-sm-block">
             <div class="header">
                 <div class="container py-2">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-between">
                         <a href="index.html" class="flex-fill">
                             <img src="logo-2.jpg" width="150px">
                         </a> 
                         <div class="d-flex flex-fill">
                             <input 
                                 type="search" 
-                                class="form-control" 
+                                class="form-control d-none d-md-flex" 
                                 id="search-input" 
                                 placeholder="Busque sua cerveja"     
                             >
                             <button type="button" class="btn">
                                 <a href="">
-                                    <img src="pesquisa.png" width="35px">
+                                    <i class="fas fa-search fa-2x"></i>
                                 </a>
                             </button>
                         </div>
-                            <div class="flex-fill text-end">
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img src="insta.png" width="40px" height="40px">
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img src="face.png" width="35px" height="35px">
-                                </a>
-                            </div>
-                        </div> 
+                        <div class="flex-fill text-end">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </div>
                     </div>  
                 </div>
             </div>       
-                <nav class="header-2 pt-3 pb-1">  
-                    <div class="container">     
-                        <div class="header-2 d-flex justify-content-between">   
-                            <ul class="list-unstyled d-flex list-inline">          
-                                <li 
-                                    class="list-inline-item">
-                                    <a href="index.html">
-                                        Página inicial
-                                    </a>
-                                </li>
-                                <li 
-                                    class="list-inline-item">
-                                    <a href="quem-somos.html">
-                                        Quem Somos
-                                    </a>
-                                </li>
-                                <li 
-                                    class="list-inline-item">
-                                    <a href="produtos.html">
-                                        Produtos
-                                    </a>
-                                </li>   
-                                <li 
-                                    class="list-inline-item">
-                                    <a href="fale-conosco.html">
-                                        Fale Conosco
-                                    </a>
-                                </li> 
-                            </ul>  
-                            <ul class="list-unstyled list-inline">
-                                <li>
-                                    <a class="fs-5 fw-bold text-white"
-                                        href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
-                                        Veja nossa matriz
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="carrinho-de-compra.html">
-                                <img src="carrinho-de-compras.jpg" width="35px">
-                            </a>
-                        </div> 
-                    </div>        
-                </nav>  
+            <nav class="header-2 pt-3 pb-1 d-none d-sm-flex">  
+                <div class="container">     
+                    <div class="header-2 d-flex justify-content-between">   
+                        <ul class="list-unstyled list-inline d-none d-sm-flex">          
+                            <li 
+                                class="list-inline-item">
+                                <a href="index.html">
+                                    Página inicial
+                                </a>
+                            </li>
+                            <li 
+                                class="list-inline-item">
+                                <a href="quem-somos.html">
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li 
+                                class="list-inline-item">
+                                <a href="produtos.html">
+                                    Produtos
+                                </a>
+                            </li>   
+                            <li 
+                                class="list-inline-item">
+                                <a href="fale-conosco.html">
+                                    Fale Conosco
+                                </a>
+                            </li> 
+                        </ul>  
+                        <ul class="list-unstyled list-inline d-none d-lg-flex">
+                            <li>
+                                <a class="fs-5 fw-bold text-white"
+                                    href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
+                                    Veja nossa matriz
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="carrinho-de-compra.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                        </a>
+                    </div> 
+                </div>        
+            </nav>  
+        </header>
+        <header class="mb-4 d-flex d-sm-none">
+            <div class="header container py-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <button 
+                        class="btn fa-lg" 
+                        type="button" 
+                        data-bs-toggle="offcanvas" 
+                        data-bs-target="#offcanvasExample" 
+                        aria-controls="offcanvasExample"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div 
+                        class="offcanvas offcanvas-start" 
+                        tabindex="-1" 
+                        id="offcanvasExample" 
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5 
+                                class="offcanvas-title" 
+                                id="offcanvasExampleLabel"
+                            >
+                                Menu
+                            </h5>
+                            <button 
+                                type="button" 
+                                class="btn-close text-reset" 
+                                data-bs-dismiss="offcanvas" 
+                                aria-label="Close"
+                            >
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                        
+                            <div class="dropdown mt-3">
+                                <ul>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="index.html"
+                                        >Página Inicial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="quem-somos.html"
+                                        >
+                                            Quem Somos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="produtos.html"
+                                        >Produtos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="fale-conosco.html"
+                                        >
+                                            Fale Conosco
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="https://www.deliriumvillage.com/bar/delirium-cafe/" 
+                                            target="_blank"
+                                        >
+                                            Veja nossa matriz
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                  </div>
+                    <button type="button" class="btn">
+                        <a href="">
+                            <i class="fas fa-search fa-lg"></i>
+                        </a>
+                    </button>
+                    <div>
+                        <a href="carrinho-de-compra.html">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
             <section>
@@ -175,17 +269,17 @@
                                 </div> 
                             </div> 
                             <div>
-                                <a class="fs-3 text-white"
+                                <a class="fs-3 text-white d-none d-sm-block"
                                     href="https://www.deliriumvillage.com/bar/delirium-cafe/" target="_blank">
                                     Veja nossa matriz
                                 </a>
                             </div>                  
                         <div>
                             <a href="https://www.instagram.com/" target="_blank">
-                                <img src="insta.png" width="40px" height="40px">
+                                <i class="fab fa-instagram fa-2x"></i>
                             </a>
                             <a href="https://www.facebook.com/" target="_blank">
-                                <img src="face.png" width="35px" height="35px">
+                                <i class="fab fa-facebook fa-2x"></i>
                             </a>
                         </div>
                     </div>
